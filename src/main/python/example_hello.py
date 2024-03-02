@@ -1,6 +1,5 @@
 import sys
 
-"""Prints \"Hello World!\" to the given output stream."""
 def hello_world(out):
     """
     Prints \"Hello World!\".
@@ -8,7 +7,10 @@ def hello_world(out):
     >>> hello_world(sys.stdout)
     Hello World!\n
     """
-    out.write("Hello World!\n")
+    out.write("Hello world of Python\n")
+
+# Call the function with a file object
+helloworld(sys.stdout)
 
 
 if __name__ == "__main__": # pragma: no cover
