@@ -3,10 +3,10 @@ name: PyBuilder Workflow
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   lint:
@@ -26,11 +26,10 @@ jobs:
 
       - name: Run pylint
     
-run: pylint src/main/python/helloworld.py
+run: pylint src/main/python/example_hello.py
 
   build_and_test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
