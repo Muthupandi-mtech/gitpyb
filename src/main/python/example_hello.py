@@ -18,5 +18,3 @@ if __name__ == "__main__": # pragma: no cover
     import doctest
     doctest.testmod()
 
-    # Call the function with a file object
-    hello_world(sys.stdout)
