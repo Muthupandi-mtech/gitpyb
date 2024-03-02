@@ -1,3 +1,7 @@
+"""
+This is a simple module to demonstrate a hello world function in Python.
+"""
+
 import sys
 
 def hello_world(out):
@@ -9,10 +13,10 @@ def hello_world(out):
     """
     out.write("Hello world of Python\n")
 
-# Call the function with a file object
-helloworld(sys.stdout)
-
 
 if __name__ == "__main__": # pragma: no cover
     import doctest
     doctest.testmod()
+
+    # Call the function with a file object
+    hello_world(sys.stdout)
