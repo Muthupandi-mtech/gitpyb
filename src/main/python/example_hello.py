@@ -13,6 +13,8 @@ def hello_world(out):
     """
     out.write("Hello world of Python\n")
 
+#call the function with a file object
+hello_world(sys.stdout)
 
 if __name__ == "__main__": # pragma: no cover
     import doctest
