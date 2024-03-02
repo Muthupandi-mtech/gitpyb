@@ -23,11 +23,10 @@ jobs:
 
       - name: Install pylint
         run: pip install pylint
-
+        
       - name: Run pylint
-    
-run: pylint src/main/python/example_hello.py
-
+        run: pylint src/main/python/example_hello.py
+        
   build_and_test:
     runs-on: ubuntu-latest
     steps:
@@ -54,5 +53,4 @@ run: pylint src/main/python/example_hello.py
           path: target/reports  
 
       - name: List Files  # Optional step
-        run: |
-          ls -R      
+        run: ls -R      
